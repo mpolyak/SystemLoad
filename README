@@ -4,6 +4,9 @@ Description
 System Load measures your CPU usage and displays the result in a web dashboard.
 It will also generate an alert if CPU usage stays above 50% on average for 2 minutes and will clear the alert once it drops below 50% for 2 minutes.
 
+![Alt text](/screenshots/sine.png?raw=true "Sine Wave")
+![Alt text](/screenshots/square.png?raw=true "Square Wave")
+
 System Requirements
 -------------------
 
