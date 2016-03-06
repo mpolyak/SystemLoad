@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Monitor your System Load">
+    <meta name="keywords" content="JavaScript, Node, WebSocket, D3">
+    <meta name="author" content="Michael Polyak">
+
+    <title>System Load</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700" rel="stylesheet" type="text/css">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <figure>
+        <figcaption></figcaption>
+
+        <svg>
+            <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#CE2222" />
+                    <stop id="gradient-mid" offset="0.5" stop-color="#BEBE1E" />
+                    <stop offset="1" stop-color="#228E22" />
+                </linearGradient>
+
+                <clipPath id="clip">
+                    <rect />
+                </clipPath>
+            </defs>
+
+            <g class="chart">
+                <g clip-path="url(#clip)">
+                    <g class="x axis"></g>
+                </g>
+
+                <g class="y axis"></g>
+
+                <path class="line" clip-path="url(#clip)" />
+
+                <g class="events"></g>
+
+                <rect class="overlay" />
+            </g>
+        </svg>
+    </figure>
+
+    <ul></ul>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Development
+-----------
+
+1. Implement delta updates to clients instead of sending all measurement and events information every time.
+2. Persist measurements between application restarts.
+3. Breakup client code into module files and use a bundler with ES6 transpiling.
+4. Collect all external dependencies in local distribution.
+5. Create complete test coverage for both server and client code.
+6. Use stylesheet compiler for CSS.
+
+Design
+------
+
+1. Add variable period, alerting time window and load thresholds.
+2. Add responsive breakpoints and scaling to handle multiple resolutions and display devices.
+3. Add ability to visualize multiple load stats, not just the CPU load.
+4. Add customizable layout capabilities to allow different placements of display widgets.
+5. Make text font size be responsive to widget size and resolution to maximize visibility.
+6. Add ability to to snap graph in time to an alert/recover event.

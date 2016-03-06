@@ -1,0 +1,30 @@
+{
+  "name": "systemload",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monitor your System Load",
+  "author": "Michael Polyak mpolyak@gmail.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.3.1"
+  },
+  "main": "server/main.js",
+  "bin": {
+    "mocha": "./bin/mocha",
+    "_mocha": "./bin/_mocha"
+  },
+  "scripts": {
+    "test": "mocha --harmony --harmony-destructuring --recursive --no-colors",
+    "start": "node --harmony --harmony-destructuring server/main.js",
+    "load-100": "node --harmony server/load.js",
+    "load-sin": "node --harmony server/load.js sin"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "ws": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
